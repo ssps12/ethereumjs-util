@@ -2,124 +2,125 @@
 
 ### Table of Contents
 
--   [addHexPrefix](#addhexprefix)
--   [baToJSON](#batojson)
--   [BN](#bn)
--   [bufferToHex](#buffertohex)
--   [bufferToInt](#buffertoint)
--   [defineProperties](#defineproperties)
--   [ecrecover](#ecrecover)
--   [ecsign](#ecsign)
--   [fromRpcSig](#fromrpcsig)
--   [fromSigned](#fromsigned)
--   [generateAddress](#generateaddress)
--   [hashPersonalMessage](#hashpersonalmessage)
--   [importPublic](#importpublic)
--   [isPrecompiled](#isprecompiled)
--   [isValidAddress](#isvalidaddress)
--   [isValidChecksumAddress](#isvalidchecksumaddress)
--   [isValidPrivate](#isvalidprivate)
--   [isValidPublic](#isvalidpublic)
--   [keccak](#keccak)
--   [keccak256](#keccak256)
--   [privateToAddress](#privatetoaddress)
--   [pubToAddress](#pubtoaddress)
--   [ripemd160](#ripemd160)
--   [rlp](#rlp)
--   [rlphash](#rlphash)
--   [secp256k1](#secp256k1)
--   [setLengthRight](#setlengthright)
--   [sha256](#sha256)
--   [sha3](#sha3)
--   [toBuffer](#tobuffer)
--   [toChecksumAddress](#tochecksumaddress)
--   [toRpcSig](#torpcsig)
--   [toUnsigned](#tounsigned)
--   [unpad](#unpad)
--   [isValidSignature](#isvalidsignature)
--   [isZeroAddress](#iszeroaddress)
--   [KECCAK256_NULL](#keccak256_null)
--   [KECCAK256_NULL_S](#keccak256_null_s)
--   [KECCAK256_RLP](#keccak256_rlp)
--   [KECCAK256_RLP_ARRAY](#keccak256_rlp_array)
--   [KECCAK256_RLP_ARRAY_S](#keccak256_rlp_array_s)
--   [KECCAK256_RLP_S](#keccak256_rlp_s)
--   [lsetLength](#lsetlength)
--   [MAX_INTEGER](#max_integer)
--   [privateToPublic](#privatetopublic)
--   [TWO_POW256](#two_pow256)
--   [zeroAddress](#zeroaddress)
--   [zeros](#zeros)
+-   [BN][1]
+-   [addHexPrefix][2]
+-   [baToJSON][3]
+-   [bufferToHex][4]
+-   [bufferToInt][5]
+-   [defineProperties][6]
+-   [ecrecover][7]
+-   [ecsign][8]
+-   [fromRpcSig][9]
+-   [fromSigned][10]
+-   [generateAddress][11]
+-   [generateAddress2][12]
+-   [hashPersonalMessage][13]
+-   [importPublic][14]
+-   [isPrecompiled][15]
+-   [isValidAddress][16]
+-   [isValidChecksumAddress][17]
+-   [isValidPrivate][18]
+-   [isValidPublic][19]
+-   [keccak][20]
+-   [keccak256][21]
+-   [privateToAddress][22]
+-   [pubToAddress][23]
+-   [ripemd160][24]
+-   [rlp][25]
+-   [rlphash][26]
+-   [secp256k1][27]
+-   [setLengthRight][28]
+-   [sha256][29]
+-   [sha3][30]
+-   [toBuffer][31]
+-   [toChecksumAddress][32]
+-   [toRpcSig][33]
+-   [toUnsigned][34]
+-   [unpad][35]
+-   [KECCAK256_NULL][36]
+-   [KECCAK256_NULL_S][37]
+-   [KECCAK256_RLP][38]
+-   [KECCAK256_RLP_ARRAY][39]
+-   [KECCAK256_RLP_ARRAY_S][40]
+-   [KECCAK256_RLP_S][41]
+-   [MAX_INTEGER][42]
+-   [TWO_POW256][43]
+-   [isValidSignature][44]
+-   [isZeroAddress][45]
+-   [lsetLength][46]
+-   [privateToPublic][47]
+-   [zeroAddress][48]
+-   [zeros][49]
+
+## BN
+
+[index.js:68-68][50]
+
+[`BN`][51]
+
+Type: [Function][52]
 
 ## addHexPrefix
 
-[index.js:550-556](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L550-L556 "Source code on GitHub")
+[index.js:568-574][53]
 
 Adds "0x" to a given `String` if it does not already start with "0x"
 
 **Parameters**
 
--   `str` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `str` **[String][54]** 
 
-Returns **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+Returns **[String][54]** 
 
 ## baToJSON
 
-[index.js:599-609](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L599-L609 "Source code on GitHub")
+[index.js:617-627][55]
 
 Converts a `Buffer` or `Array` to JSON
 
 **Parameters**
 
--   `ba` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))** 
+-   `ba` **([Buffer][56] \| [Array][57])** 
 
-Returns **([Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | null)** 
-
-## BN
-
-[index.js:68-68](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L68-L68 "Source code on GitHub")
-
-[`BN`](https://github.com/indutny/bn.js)
-
-Type: [Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)
+Returns **([Array][57] \| [String][54] | null)** 
 
 ## bufferToHex
 
-[index.js:200-203](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L200-L203 "Source code on GitHub")
+[index.js:200-203][58]
 
 Converts a `Buffer` into a hex `String`
 
 **Parameters**
 
--   `buf` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `buf` **[Buffer][56]** 
 
-Returns **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+Returns **[String][54]** 
 
 ## bufferToInt
 
-[index.js:191-193](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L191-L193 "Source code on GitHub")
+[index.js:191-193][59]
 
 Converts a `Buffer` to a `Number`
 
 **Parameters**
 
--   `buf` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `buf` **[Buffer][56]** 
 
 
 -   Throws **any** If the input number exceeds 53 bits.
 
-Returns **[Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+Returns **[Number][60]** 
 
 ## defineProperties
 
-[index.js:621-714](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L621-L714 "Source code on GitHub")
+[index.js:639-732][61]
 
 Defines properties on a `Object`. It make the assumption that underlying data is binary.
 
 **Parameters**
 
--   `self` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** the `Object` to define properties on
--   `fields` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** an array fields to define. Fields can contain:-   `name` - the name of the properties
+-   `self` **[Object][62]** the `Object` to define properties on
+-   `fields` **[Array][57]** an array fields to define. Fields can contain:-   `name` - the name of the properties
     -   `length` - the number of bytes the field can have
     -   `allowLess` - if the field can be less than the length
     -   `allowEmpty`
@@ -127,73 +128,87 @@ Defines properties on a `Object`. It make the assumption that underlying data is
 
 ## ecrecover
 
-[index.js:395-403](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L395-L403 "Source code on GitHub")
+[index.js:395-403][63]
 
 ECDSA public key recovery from signature
 
 **Parameters**
 
--   `msgHash` **[Buffer](https://nodejs.org/api/buffer.html)** 
--   `v` **[Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
--   `r` **[Buffer](https://nodejs.org/api/buffer.html)** 
--   `s` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `msgHash` **[Buffer][56]** 
+-   `v` **[Number][60]** 
+-   `r` **[Buffer][56]** 
+-   `s` **[Buffer][56]** 
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** publicKey
+Returns **[Buffer][56]** publicKey
 
 ## ecsign
 
-[index.js:364-372](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L364-L372 "Source code on GitHub")
+[index.js:364-372][64]
 
 ECDSA sign
 
 **Parameters**
 
--   `msgHash` **[Buffer](https://nodejs.org/api/buffer.html)** 
--   `privateKey` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `msgHash` **[Buffer][56]** 
+-   `privateKey` **[Buffer][56]** 
 
-Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
+Returns **[Object][62]** 
 
 ## fromRpcSig
 
-[index.js:433-452](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L433-L452 "Source code on GitHub")
+[index.js:432-451][65]
 
 Convert signature format of the `eth_sign` RPC method to signature parameters
-NOTE: all because of a bug in geth: <https://github.com/ethereum/go-ethereum/issues/2053>
+NOTE: all because of a bug in geth: [https://github.com/ethereum/go-ethereum/issues/2053][66]
 
 **Parameters**
 
--   `sig` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `sig` **[String][54]** 
 
-Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
+Returns **[Object][62]** 
 
 ## fromSigned
 
-[index.js:210-212](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L210-L212 "Source code on GitHub")
+[index.js:210-212][67]
 
 Interprets a `Buffer` as a signed integer and returns a `BN`. Assumes 256-bit numbers.
 
 **Parameters**
 
--   `num` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `num` **[Buffer][56]** 
 
 Returns **BN** 
 
 ## generateAddress
 
-[index.js:519-533](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L519-L533 "Source code on GitHub")
+[index.js:518-532][68]
 
 Generates an address of a newly created contract
 
 **Parameters**
 
--   `from` **[Buffer](https://nodejs.org/api/buffer.html)** the address which is creating this new address
--   `nonce` **[Buffer](https://nodejs.org/api/buffer.html)** the nonce of the from account
+-   `from` **[Buffer][56]** the address which is creating this new address
+-   `nonce` **[Buffer][56]** the nonce of the from account
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
+
+## generateAddress2
+
+[index.js:541-551][69]
+
+Generates an address for a contract created using CREATE2
+
+**Parameters**
+
+-   `from` **[Buffer][56]** the address which is creating this new address
+-   `salt` **[Buffer][56]** a salt
+-   `inputCode` **[Buffer][56]** the code of the contract being created
+
+Returns **[Buffer][56]** 
 
 ## hashPersonalMessage
 
-[index.js:382-385](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L382-L385 "Source code on GitHub")
+[index.js:382-385][70]
 
 Returns the keccak-256 hash of `message`, prefixed with the header used by the `eth_sign` RPC call.
 The output of this function can be fed into `ecsign` to produce the same signature as the `eth_sign`
@@ -204,216 +219,216 @@ used to produce the signature.
 
 -   `message`  
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** hash
+Returns **[Buffer][56]** hash
 
 ## importPublic
 
-[index.js:350-356](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L350-L356 "Source code on GitHub")
+[index.js:350-356][71]
 
 Converts a public key to the Ethereum format.
 
 **Parameters**
 
--   `publicKey` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `publicKey` **[Buffer][56]** 
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## isPrecompiled
 
-[index.js:540-543](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L540-L543 "Source code on GitHub")
+[index.js:558-561][72]
 
 Returns true if the supplied address belongs to a precompiled account (Byzantium)
 
 **Parameters**
 
--   `address` **([Buffer](https://nodejs.org/api/buffer.html) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** 
+-   `address` **([Buffer][56] \| [String][54])** 
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][73]** 
 
 ## isValidAddress
 
-[index.js:468-470](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L468-L470 "Source code on GitHub")
+[index.js:467-469][74]
 
 Checks if the address is a valid. Accepts checksummed addresses too
 
 **Parameters**
 
--   `address` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `address` **[String][54]** 
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][73]** 
 
 ## isValidChecksumAddress
 
-[index.js:509-511](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L509-L511 "Source code on GitHub")
+[index.js:508-510][75]
 
 Checks if the address is a valid checksummed address
 
 **Parameters**
 
--   `address` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `address` **[Buffer][56]** 
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][73]** 
 
 ## isValidPrivate
 
-[index.js:293-295](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L293-L295 "Source code on GitHub")
+[index.js:293-295][76]
 
 Checks if the private key satisfies the rules of the curve secp256k1.
 
 **Parameters**
 
--   `privateKey` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `privateKey` **[Buffer][56]** 
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][73]** 
 
 ## isValidPublic
 
-[index.js:304-315](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L304-L315 "Source code on GitHub")
+[index.js:304-315][77]
 
 Checks if the public key satisfies the rules of the curve secp256k1
 and the requirements of Ethereum.
 
 **Parameters**
 
--   `publicKey` **[Buffer](https://nodejs.org/api/buffer.html)** The two points of an uncompressed key, unless sanitize is enabled
--   `sanitize` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Accept public keys in other formats (optional, default `false`)
+-   `publicKey` **[Buffer][56]** The two points of an uncompressed key, unless sanitize is enabled
+-   `sanitize` **[Boolean][73]** Accept public keys in other formats (optional, default `false`)
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][73]** 
 
 ## keccak
 
-[index.js:229-234](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L229-L234 "Source code on GitHub")
+[index.js:229-234][78]
 
 Creates Keccak hash of the input
 
 **Parameters**
 
--   `a` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** the input data
--   `bits` **[Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the Keccak width (optional, default `256`)
+-   `a` **([Buffer][56] \| [Array][57] \| [String][54] \| [Number][60])** the input data
+-   `bits` **[Number][60]** the Keccak width (optional, default `256`)
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## keccak256
 
-[index.js:241-243](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L241-L243 "Source code on GitHub")
+[index.js:241-243][79]
 
 Creates Keccak-256 hash of the input, alias for keccak(a, 256)
 
 **Parameters**
 
--   `a` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** the input data
+-   `a` **([Buffer][56] \| [Array][57] \| [String][54] \| [Number][60])** the input data
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## privateToAddress
 
-[index.js:459-461](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L459-L461 "Source code on GitHub")
+[index.js:458-460][80]
 
 Returns the ethereum address of a given private key
 
 **Parameters**
 
--   `privateKey` **[Buffer](https://nodejs.org/api/buffer.html)** A private key must be 256 bits wide
+-   `privateKey` **[Buffer][56]** A private key must be 256 bits wide
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## pubToAddress
 
-[index.js:324-332](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L324-L332 "Source code on GitHub")
+[index.js:324-332][81]
 
 Returns the ethereum address of a given public key.
 Accepts "Ethereum public keys" and SEC1 encoded keys.
 
 **Parameters**
 
--   `pubKey` **[Buffer](https://nodejs.org/api/buffer.html)** The two points of an uncompressed key, unless sanitize is enabled
--   `sanitize` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Accept public keys in other formats (optional, default `false`)
+-   `pubKey` **[Buffer][56]** The two points of an uncompressed key, unless sanitize is enabled
+-   `sanitize` **[Boolean][73]** Accept public keys in other formats (optional, default `false`)
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## ripemd160
 
-[index.js:269-277](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L269-L277 "Source code on GitHub")
+[index.js:269-277][82]
 
 Creates RIPEMD160 hash of the input
 
 **Parameters**
 
--   `a` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** the input data
--   `padded` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** whether it should be padded to 256 bits or not
+-   `a` **([Buffer][56] \| [Array][57] \| [String][54] \| [Number][60])** the input data
+-   `padded` **[Boolean][73]** whether it should be padded to 256 bits or not
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## rlp
 
-[index.js:74-74](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L74-L74 "Source code on GitHub")
+[index.js:74-74][83]
 
-[`rlp`](https://github.com/ethereumjs/rlp)
+[`rlp`][84]
 
-Type: [Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)
+Type: [Function][52]
 
 ## rlphash
 
-[index.js:284-286](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L284-L286 "Source code on GitHub")
+[index.js:284-286][85]
 
 Creates SHA-3 hash of the RLP encoded version of the input
 
 **Parameters**
 
--   `a` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** the input data
+-   `a` **([Buffer][56] \| [Array][57] \| [String][54] \| [Number][60])** the input data
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## secp256k1
 
-[index.js:80-80](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L80-L80 "Source code on GitHub")
+[index.js:80-80][86]
 
-[`secp256k1`](https://github.com/cryptocoinjs/secp256k1-node/)
+[`secp256k1`][87]
 
-Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)
+Type: [Object][62]
 
 ## setLengthRight
 
-[index.js:137-139](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L137-L139 "Source code on GitHub")
+[index.js:137-139][88]
 
 Right Pads an `Array` or `Buffer` with leading zeros till it has `length` bytes.
 Or it truncates the beginning if it exceeds.
 
 **Parameters**
 
--   `msg` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))** the value to pad
--   `length` **[Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the number of bytes the output should be
+-   `msg` **([Buffer][56] \| [Array][57])** the value to pad
+-   `length` **[Number][60]** the number of bytes the output should be
 
-Returns **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))** 
+Returns **([Buffer][56] \| [Array][57])** 
 
 ## sha256
 
-[index.js:258-261](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L258-L261 "Source code on GitHub")
+[index.js:258-261][89]
 
 Creates SHA256 hash of the input
 
 **Parameters**
 
--   `a` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** the input data
+-   `a` **([Buffer][56] \| [Array][57] \| [String][54] \| [Number][60])** the input data
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## sha3
 
-[index.js:251-251](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L251-L251 "Source code on GitHub")
+[index.js:251-251][90]
 
 Creates SHA-3 (Keccak) hash of the input [OBSOLETE]
 
 **Parameters**
 
--   `a` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** the input data
--   `bits` **[Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the SHA-3 width (optional, default `256`)
+-   `a` **([Buffer][56] \| [Array][57] \| [String][54] \| [Number][60])** the input data
+-   `bits` **[Number][60]** the SHA-3 width (optional, default `256`)
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## toBuffer
 
-[index.js:159-183](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L159-L183 "Source code on GitHub")
+[index.js:159-183][91]
 
 Attempts to turn a value into a `Buffer`. As input it supports `Buffer`, `String`, `Number`, null/undefined, `BN` and other objects with a `toArray()` method.
 
@@ -423,33 +438,33 @@ Attempts to turn a value into a `Buffer`. As input it supports `Buffer`, `String
 
 ## toChecksumAddress
 
-[index.js:488-502](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L488-L502 "Source code on GitHub")
+[index.js:487-501][92]
 
 Returns a checksummed address
 
 **Parameters**
 
--   `address` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `address` **[String][54]** 
 
-Returns **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+Returns **[String][54]** 
 
 ## toRpcSig
 
-[index.js:412-425](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L412-L425 "Source code on GitHub")
+[index.js:412-424][93]
 
 Convert signature parameters into the format of `eth_sign` RPC method
 
 **Parameters**
 
--   `v` **[Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
--   `r` **[Buffer](https://nodejs.org/api/buffer.html)** 
--   `s` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `v` **[Number][60]** 
+-   `r` **[Buffer][56]** 
+-   `s` **[Buffer][56]** 
 
-Returns **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** sig
+Returns **[String][54]** sig
 
 ## toUnsigned
 
-[index.js:219-221](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L219-L221 "Source code on GitHub")
+[index.js:219-221][94]
 
 Converts a `BN` to an unsigned integer and returns it as a `Buffer`. Assumes 256-bit numbers.
 
@@ -457,154 +472,372 @@ Converts a `BN` to an unsigned integer and returns it as a `Buffer`. Assumes 256
 
 -   `num` **BN** 
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
 
 ## unpad
 
-[index.js:146-154](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L146-L154 "Source code on GitHub")
+[index.js:146-154][95]
 
 Trims leading zeros from a `Buffer` or an `Array`
 
 **Parameters**
 
--   `a` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** 
+-   `a` **([Buffer][56] \| [Array][57] \| [String][54])** 
 
-Returns **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) \| [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** 
+Returns **([Buffer][56] \| [Array][57] \| [String][54])** 
+
+## KECCAK256_NULL
+
+[index.js:33-33][96]
+
+Keccak-256 hash of null (a `Buffer`)
+
+Type: [Buffer][56]
+
+## KECCAK256_NULL_S
+
+[index.js:26-26][97]
+
+Keccak-256 hash of null (a `String`)
+
+Type: [String][54]
+
+## KECCAK256_RLP
+
+[index.js:61-61][98]
+
+Keccak-256 hash of the RLP of null (a `Buffer`)
+
+Type: [Buffer][56]
+
+## KECCAK256_RLP_ARRAY
+
+[index.js:47-47][99]
+
+Keccak-256 of an RLP of an empty array (a `Buffer`)
+
+Type: [Buffer][56]
+
+## KECCAK256_RLP_ARRAY_S
+
+[index.js:40-40][100]
+
+Keccak-256 of an RLP of an empty array (a `String`)
+
+Type: [String][54]
+
+## KECCAK256_RLP_S
+
+[index.js:54-54][101]
+
+Keccak-256 hash of the RLP of null  (a `String`)
+
+Type: [String][54]
+
+## MAX_INTEGER
+
+[index.js:14-14][102]
+
+the max integer that this VM can handle (a `BN`)
+
+Type: BN
+
+## TWO_POW256
+
+[index.js:20-20][103]
+
+2^256 (a `BN`)
+
+Type: BN
 
 ## isValidSignature
 
-[index.js:568-592](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L568-L592 "Source code on GitHub")
+[index.js:586-610][104]
 
 Validate ECDSA signature
 
 **Parameters**
 
--   `v` **[Buffer](https://nodejs.org/api/buffer.html)** 
--   `r` **[Buffer](https://nodejs.org/api/buffer.html)** 
--   `s` **[Buffer](https://nodejs.org/api/buffer.html)** 
--   `homestead` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**  (optional, default `true`)
+-   `v` **[Buffer][56]** 
+-   `r` **[Buffer][56]** 
+-   `s` **[Buffer][56]** 
+-   `homestead` **[Boolean][73]**  (optional, default `true`)
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][73]** 
 
 ## isZeroAddress
 
-[index.js:478-481](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L478-L481 "Source code on GitHub")
+[index.js:477-480][105]
 
 Checks if a given address is a zero address
 
 **Parameters**
 
--   `address` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `address` **[String][54]** 
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
-
-## KECCAK256_NULL
-
-[index.js:33-33](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L33-L33 "Source code on GitHub")
-
-Keccak-256 hash of null (a `Buffer`)
-
-Type: [Buffer](https://nodejs.org/api/buffer.html)
-
-## KECCAK256_NULL_S
-
-[index.js:26-26](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L26-L26 "Source code on GitHub")
-
-Keccak-256 hash of null (a `String`)
-
-Type: [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
-
-## KECCAK256_RLP
-
-[index.js:61-61](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L61-L61 "Source code on GitHub")
-
-Keccak-256 hash of the RLP of null (a `Buffer`)
-
-Type: [Buffer](https://nodejs.org/api/buffer.html)
-
-## KECCAK256_RLP_ARRAY
-
-[index.js:47-47](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L47-L47 "Source code on GitHub")
-
-Keccak-256 of an RLP of an empty array (a `Buffer`)
-
-Type: [Buffer](https://nodejs.org/api/buffer.html)
-
-## KECCAK256_RLP_ARRAY_S
-
-[index.js:40-40](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L40-L40 "Source code on GitHub")
-
-Keccak-256 of an RLP of an empty array (a `String`)
-
-Type: [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
-
-## KECCAK256_RLP_S
-
-[index.js:54-54](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L54-L54 "Source code on GitHub")
-
-Keccak-256 hash of the RLP of null  (a `String`)
-
-Type: [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
+Returns **[Boolean][73]** 
 
 ## lsetLength
 
-[index.js:112-128](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L112-L128 "Source code on GitHub")
+[index.js:112-128][106]
 
 Left Pads an `Array` or `Buffer` with leading zeros till it has `length` bytes.
 Or it truncates the beginning if it exceeds.
 
 **Parameters**
 
--   `msg` **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))** the value to pad
--   `length` **[Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the number of bytes the output should be
--   `right` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** whether to start padding form the left or right (optional, default `false`)
+-   `msg` **([Buffer][56] \| [Array][57])** the value to pad
+-   `length` **[Number][60]** the number of bytes the output should be
+-   `right` **[Boolean][73]** whether to start padding form the left or right (optional, default `false`)
 
-Returns **([Buffer](https://nodejs.org/api/buffer.html) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))** 
-
-## MAX_INTEGER
-
-[index.js:14-14](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L14-L14 "Source code on GitHub")
-
-the max integer that this VM can handle (a `BN`)
-
-Type: BN
+Returns **([Buffer][56] \| [Array][57])** 
 
 ## privateToPublic
 
-[index.js:339-343](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L339-L343 "Source code on GitHub")
+[index.js:339-343][107]
 
 Returns the ethereum public key of a given private key
 
 **Parameters**
 
--   `privateKey` **[Buffer](https://nodejs.org/api/buffer.html)** A private key must be 256 bits wide
+-   `privateKey` **[Buffer][56]** A private key must be 256 bits wide
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
-
-## TWO_POW256
-
-[index.js:20-20](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L20-L20 "Source code on GitHub")
-
-2^256 (a `BN`)
-
-Type: BN
+Returns **[Buffer][56]** 
 
 ## zeroAddress
 
-[index.js:97-101](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L97-L101 "Source code on GitHub")
+[index.js:97-101][108]
 
 Returns a zero address
 
-Returns **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+Returns **[String][54]** 
 
 ## zeros
 
-[index.js:88-90](https://github.com/ethereumjs/ethereumjs-util/blob/54aa41ccb5c09de626ee358499e2efab535bc0bf/index.js#L88-L90 "Source code on GitHub")
+[index.js:88-90][109]
 
 Returns a buffer filled with 0s
 
 **Parameters**
 
--   `bytes` **[Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the number of bytes the buffer should be
+-   `bytes` **[Number][60]** the number of bytes the buffer should be
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer][56]** 
+
+[1]: #bn
+
+[2]: #addhexprefix
+
+[3]: #batojson
+
+[4]: #buffertohex
+
+[5]: #buffertoint
+
+[6]: #defineproperties
+
+[7]: #ecrecover
+
+[8]: #ecsign
+
+[9]: #fromrpcsig
+
+[10]: #fromsigned
+
+[11]: #generateaddress
+
+[12]: #generateaddress2
+
+[13]: #hashpersonalmessage
+
+[14]: #importpublic
+
+[15]: #isprecompiled
+
+[16]: #isvalidaddress
+
+[17]: #isvalidchecksumaddress
+
+[18]: #isvalidprivate
+
+[19]: #isvalidpublic
+
+[20]: #keccak
+
+[21]: #keccak256
+
+[22]: #privatetoaddress
+
+[23]: #pubtoaddress
+
+[24]: #ripemd160
+
+[25]: #rlp
+
+[26]: #rlphash
+
+[27]: #secp256k1
+
+[28]: #setlengthright
+
+[29]: #sha256
+
+[30]: #sha3
+
+[31]: #tobuffer
+
+[32]: #tochecksumaddress
+
+[33]: #torpcsig
+
+[34]: #tounsigned
+
+[35]: #unpad
+
+[36]: #keccak256_null
+
+[37]: #keccak256_null_s
+
+[38]: #keccak256_rlp
+
+[39]: #keccak256_rlp_array
+
+[40]: #keccak256_rlp_array_s
+
+[41]: #keccak256_rlp_s
+
+[42]: #max_integer
+
+[43]: #two_pow256
+
+[44]: #isvalidsignature
+
+[45]: #iszeroaddress
+
+[46]: #lsetlength
+
+[47]: #privatetopublic
+
+[48]: #zeroaddress
+
+[49]: #zeros
+
+[50]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L68-L68 "Source code on GitHub"
+
+[51]: https://github.com/indutny/bn.js
+
+[52]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+
+[53]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L568-L574 "Source code on GitHub"
+
+[54]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[55]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L617-L627 "Source code on GitHub"
+
+[56]: https://nodejs.org/api/buffer.html
+
+[57]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[58]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L200-L203 "Source code on GitHub"
+
+[59]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L191-L193 "Source code on GitHub"
+
+[60]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[61]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L639-L732 "Source code on GitHub"
+
+[62]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[63]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L395-L403 "Source code on GitHub"
+
+[64]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L364-L372 "Source code on GitHub"
+
+[65]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L432-L451 "Source code on GitHub"
+
+[66]: https://github.com/ethereum/go-ethereum/issues/2053
+
+[67]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L210-L212 "Source code on GitHub"
+
+[68]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L518-L532 "Source code on GitHub"
+
+[69]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L541-L551 "Source code on GitHub"
+
+[70]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L382-L385 "Source code on GitHub"
+
+[71]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L350-L356 "Source code on GitHub"
+
+[72]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L558-L561 "Source code on GitHub"
+
+[73]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[74]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L467-L469 "Source code on GitHub"
+
+[75]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L508-L510 "Source code on GitHub"
+
+[76]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L293-L295 "Source code on GitHub"
+
+[77]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L304-L315 "Source code on GitHub"
+
+[78]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L229-L234 "Source code on GitHub"
+
+[79]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L241-L243 "Source code on GitHub"
+
+[80]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L458-L460 "Source code on GitHub"
+
+[81]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L324-L332 "Source code on GitHub"
+
+[82]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L269-L277 "Source code on GitHub"
+
+[83]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L74-L74 "Source code on GitHub"
+
+[84]: https://github.com/ethereumjs/rlp
+
+[85]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L284-L286 "Source code on GitHub"
+
+[86]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L80-L80 "Source code on GitHub"
+
+[87]: https://github.com/cryptocoinjs/secp256k1-node/
+
+[88]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L137-L139 "Source code on GitHub"
+
+[89]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L258-L261 "Source code on GitHub"
+
+[90]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L251-L251 "Source code on GitHub"
+
+[91]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L159-L183 "Source code on GitHub"
+
+[92]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L487-L501 "Source code on GitHub"
+
+[93]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L412-L424 "Source code on GitHub"
+
+[94]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L219-L221 "Source code on GitHub"
+
+[95]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L146-L154 "Source code on GitHub"
+
+[96]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L33-L33 "Source code on GitHub"
+
+[97]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L26-L26 "Source code on GitHub"
+
+[98]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L61-L61 "Source code on GitHub"
+
+[99]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L47-L47 "Source code on GitHub"
+
+[100]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L40-L40 "Source code on GitHub"
+
+[101]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L54-L54 "Source code on GitHub"
+
+[102]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L14-L14 "Source code on GitHub"
+
+[103]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L20-L20 "Source code on GitHub"
+
+[104]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L586-L610 "Source code on GitHub"
+
+[105]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L477-L480 "Source code on GitHub"
+
+[106]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L112-L128 "Source code on GitHub"
+
+[107]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L339-L343 "Source code on GitHub"
+
+[108]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L97-L101 "Source code on GitHub"
+
+[109]: https://github.com/ethereumjs/ethereumjs-util/blob/03883fcc2e26729ba3419730b7cbcbd48a25f75e/index.js#L88-L90 "Source code on GitHub"
