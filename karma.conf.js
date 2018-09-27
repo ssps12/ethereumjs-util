@@ -33,6 +33,12 @@ module.exports = function (config) {
       'RANDOM_TESTS_REPEAT',
       'TRAVIS'
     ],
+customLaunchers: {
+      Chrome: {
+        base: ‘ChromeHeadless’,
+        flags: [ ‘—no-sandbox’,],
+         },
+      },
     detectBrowsers: {
       enabled: true,
       usePhantomJS: false,
